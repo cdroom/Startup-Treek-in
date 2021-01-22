@@ -1,0 +1,127 @@
+.hero {
+    background-image   : url(/assets/images/bg-hero.svg);
+    background-repeat  : no-repeat;
+    background-size    : 100%;
+    background-position: bottom !important;
+    min-height         : 60vw;
+
+    &_descrip-title {
+        font-family: $font_raleway;
+        font-size  : $font-size-xxx-large;
+
+    }
+}
+
+.caracteristicas {
+    &_grafico {
+        margin : 1rem;
+        padding: 15px;
+
+        //animacion grafico   
+        &-img {
+            animation: opacidad 5s ease-in;
+        }
+    }
+
+    &_descrip {
+        margin : 1rem;
+        padding: 15px;
+
+        &-title {
+            font-family: $font_raleway;
+            font-size  : $font-size-x-large;
+        }
+    }
+
+    &_title {
+        font-family: $font_raleway;
+        font-size  : $font-size-xxx-large;
+        text-align : center;
+    }
+
+
+
+
+}
+
+.precios {
+    background-image   : url(/assets/images/bg-price.svg);
+    background-repeat  : no-repeat;
+    background-size    : 100%;
+    background-position: top !important;
+    min-height         : 50vw;
+    padding-top        : 15rem;
+
+    &_title {
+        font-family: $font_raleway;
+        font-size  : $font-size-xxx-large;
+        text-align : center;
+        color      : $white;
+    }
+
+    &_box {
+
+        background-color: $white;
+        margin          : 1rem;
+        padding         : 3rem;
+        display         : flex;
+        flex-direction  : column;
+
+        &_title {
+            padding-bottom: 2rem;
+            font-family   : $font_raleway;
+            font-size     : $font-size-x-large;
+
+
+
+        }
+
+        &_title h2 {
+            font-weight: 300;
+            font-size  : 26px;
+            margin     : 1px;
+
+
+        }
+
+
+        &_title p {
+            font-weight: $font-weight-bold;
+            font-size  : $font-size-xxx-large;
+            margin     : 0;
+
+        }
+
+        &_bajada {
+            border-bottom : 1px solid gray;
+            border-top    : 1px solid gray;
+            padding-top   : 20px;
+            padding-bottom: 27px;
+
+            flex: 1 1 auto;
+
+            & ul {
+                padding-left: 0;
+            }
+
+            & li {
+                list-style   : disc;
+                margin-bottom: 1rem;
+            }
+
+
+            padding-left: 15px;
+
+        }
+
+        &_button {
+            padding-top: 20px;
+
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+
+}

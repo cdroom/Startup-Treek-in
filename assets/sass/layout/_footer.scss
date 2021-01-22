@@ -1,0 +1,37 @@
+.footer {
+    background-color: $color_footer_background;
+    color           : $white;
+    padding-top     : 3rem;
+    padding-bottom  : 3rem;
+
+    & a:visited {
+        color: $white;
+    }
+
+    &_wrapper-left {
+        & ul {
+            display        : flex;
+            align-items    : center;
+            justify-content: start;
+            list-style     : none;
+
+            @include respond-to('m-lg') {
+                @include cont-center-flex();
+            }
+        }
+
+        & li {
+            margin-right: 1.75rem;
+        }
+    }
+
+    &_wrapper-right {
+        display        : flex;
+        align-items    : center;
+        justify-content: end;
+
+        @include respond-to('m-lg') {
+            @include cont-center-flex();
+        }
+    }
+}

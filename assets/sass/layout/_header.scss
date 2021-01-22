@@ -1,0 +1,63 @@
+.menu {
+    background-color: $white;
+    color           : $color_footer_background;
+
+    & a:visited {
+        color: $black;
+    }
+
+    &_brand {
+        display    : flex;
+        align-items: center;
+    }
+
+    &_wrapper {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        height         : 50px;
+
+        &-left {
+            display    : flex;
+            align-items: center;
+
+            & ul {
+                display        : flex;
+                justify-content: start;
+                list-style     : none;
+            }
+
+            & li {
+                margin-right: 0.75rem;
+            }
+        }
+
+        &-right {
+            display    : flex;
+            align-items: center;
+
+            & ul {
+                display        : flex;
+                justify-content: start;
+                list-style     : none;
+                align-items    : center;
+            }
+
+            & li {
+                margin-right: 0.75rem;
+            }
+
+            &-button.button {
+                width: 150px;
+            }
+
+            &-button {
+                width: 150px;
+            }
+
+            @include respond-to('m-lg') {
+                @include cont-center-flex();
+            }
+        }
+    }
+}
